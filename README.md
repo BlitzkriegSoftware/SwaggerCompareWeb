@@ -2,6 +2,9 @@
 
 It's simple but it works and has been handy
 
+* "node": "10.13.0",
+* "npm": "6.4.1"
+
 ## Core Library ##
 
 Uses the excellent `swagger-diff`
@@ -58,6 +61,7 @@ pushd ~
 az aks get-credentials -n $kb -g $rg
 popd
 ```
+
 Where ```$kb``` is the name of the K8s cluster and ```$rg``` is the resource group it is in
 
 The reason for the pushd/popd is to make sure that your are in your ```$HOME``` directory so that the ```.kube/config``` file get created in the right place.
@@ -74,6 +78,7 @@ docker push {your repository}/swaggercompareweb
 ```bash
 docker run -p 8080:8080 -d {yourname}/swaggercompareweb
 ```
+
 ### Deploy to your AKS ###
 
 Deploy to Kubernetes in Azure
@@ -94,8 +99,8 @@ kubectl create -f service.yaml
 
 #### Test your service ####
 
-```
-http://{extenal ip}:8080
+```bash
+http://{external ip}:8080
 ```
 
 -or-
@@ -111,3 +116,11 @@ Then browse to ```http://{address}:8001/ui``` to see the dashboard and browse to
 #### Tips ####
 
 * Shutdown the Agent VMs when not in use to save money.
+
+## Run it on PCF ##
+
+0 Connect to your PCF ORG and SPACE
+1 do an `npm i`
+2 adjust the `Manifest.yml` if you want (optional)
+3 run `./pcf-it.sh`
+4 Wait for push to complete and browse to the URL (route) it creates

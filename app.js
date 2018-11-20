@@ -97,4 +97,4 @@ app.use(function(err, req, res, next) {
 
 var server = http.createServer(app);
 server.listen(port);
-console.log('Application has started at location ' + process.env.PORT);
+console.log('Application has started at location ' + port);
