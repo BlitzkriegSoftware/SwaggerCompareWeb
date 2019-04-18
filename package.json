@@ -15,7 +15,7 @@
         "express-validator": "^3.2.0",
         "format-json": "^1.0.3",
         "morgan": "^1.9.1",
-        "pug": "~2.0.0-beta11",
+        "pug": "^2.0.3",
         "request": "^2.87.0",
         "serve-favicon": "^2.5.0",
         "swagger-diff": "^0.6.0"
