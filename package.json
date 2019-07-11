@@ -8,21 +8,21 @@
         "test": "mocha"
     },
     "dependencies": {
-        "body-parser": "^1.18.3",
-        "cookie-parser": "~1.4.3",
-        "debug": "~2.6.3",
-        "express": "^4.16.3",
-        "express-validator": "^3.2.0",
+        "body-parser": "^1.19.0",
+        "cookie-parser": "~1.4.4",
+        "debug": "~4.1.1",
+        "express": "^4.17.1",
+        "express-validator": "^6.1.1",
         "format-json": "^1.0.3",
         "morgan": "^1.9.1",
-        "pug": "^2.0.3",
-        "request": "^2.87.0",
+        "pug": "^2.0.4",
+        "request": "^2.88.0",
         "serve-favicon": "^2.5.0",
         "swagger-diff": "^0.6.0"
     },
     "devDependencies": {
-        "mocha": "^5.2.0",
-        "nodemon": "^1.18.3"
+        "mocha": "^6.1.4",
+        "nodemon": "^1.19.1"
     },
     "engines": {
         "node": "10.13.0",
