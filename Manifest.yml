@@ -1,6 +1,6 @@
 applications:
 - name: swagger-compare-web
-  stack: cflinuxfs2
+  stack: cflinuxfs3
   buildpack: https://github.com/cloudfoundry/nodejs-buildpack
   memory: 128M
   instances: 1
