@@ -5,6 +5,8 @@ It's simple but it works and has been handy
 * "node": "10.13.0",
 * "npm": "6.4.1"
 
+> Warning!!! This demo relies on old libraries that have security flaws, please only use this as an example.
+
 ## Core Library ##
 
 Uses the excellent `swagger-diff`
